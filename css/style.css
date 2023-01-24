@@ -1,9 +1,100 @@
 
-body{
+html{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     background-color: blanchedalmond;
     color:#92400e;
-    display: grid;
-    place-items: center;
+}
+body{
+    /* display: grid;
+    place-items: center; */
     height: 100vh;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px 20px 50px;
+    /* padding-left: 10%;
+    padding-right: 5%; */
+    
+}
+h1{
+    font-size: 3em;
+    margin: 0px;
+}
+.logo{
+    display: block;
+}
+.btn-day{
+    background-color: ivory;
+    color:#92400e;
+    font-weight: 600;
+    padding: 6px 24px;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 200px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+main{
+    padding-left: 50px;
+}
+form{
+    display: flex;
+    
+}
+.habits{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 60px;
+}
+.habit{
+    width: 56px;
+    height: 56px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+.days{
+    display: flex;
+    margin-left: 35px;
+    gap: 48px;
+}
+.day{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.day div{
+    /* margin-bottom: 8px; */
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+    font-weight: 525;
+}
+input{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 56px;
+    height: 56px;
+    border: 2px solid rgb(169, 75, 8);
+    border-radius: 10px;
+}
+
+input:checked{
+    background-color: #92400e;
+}
+footer{
+    font-size: small;
+    text-align: end;
+    color: ivory;
+    
 }

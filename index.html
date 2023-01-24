@@ -10,22 +10,57 @@
 </head>
 <body>
     <header>
-        <h1> Habit Tracker</h1>
-        <svg width="116" height="16" viewBox="0 0 116 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.5" y="0.5" width="15" height="15" rx="3.5" fill="#78350f" stroke="#78350f"/>
-            <rect x="20.5" y="0.5" width="15" height="15" rx="3.5" fill="#b45309" stroke="#b45309"/>
-            <rect x="40.5" y="0.5" width="15" height="15" rx="3.5" fill="#d97706" stroke="#d97706"/>
-            <rect x="60.5" y="0.5" width="15" height="15" rx="3.5" fill="#fbbf24" stroke="#fbbf24"/>
-            <rect x="80.5" y="0.5" width="15" height="15" rx="3.5" fill="#fde68a" stroke="#fde68a"/>
-            <rect x="100.5" y="0.5" width="15" height="15" rx="3.5" fill="#FFFBEB" stroke="#fffbeb"/>
-            </svg>     
-        <h4>Scoring one day at a time</h4>
+        <div class="logo">
+            <h1> Habit Tracker</h1>     
+            <img src="assets/dots.svg" alt="design dots to add style"/>
+            <h4>Scoring one day at a time</h4>
+        </div>
+        <button class="btn-day">
+            <img src="assets/plus.svg" alt="plus sign "/>
+            Start my day</button>
     </header>
     <main>
-
+        <form id="form-habits">
+            <div class="habits">
+                <div class="habit">💤</div>
+                <div class="habit">💊</div>
+                <div class="habit">🏋🏻</div>
+                <div class="habit">🦮</div>
+                <div class="habit">🧴</div>
+                <div class="habit">📚</div>
+                <div class="habit">📖</div>
+                <div class="habit">🥗</div>
+            </div>
+            
+            <div class="days">
+                <div class="day">
+                    <div>01/01</div>
+                    <input type="checkbox" name="sleep"/>
+                    <input type="checkbox" name="vitamins"/>
+                    <input type="checkbox" name="work out"/>
+                    <input type="checkbox" name="walk dog"/>
+                    <input type="checkbox" name="skin care"/>
+                    <input type="checkbox" name="study"/>
+                    <input type="checkbox" name="read"/>
+                    <input type="checkbox" name="eat healthy"/>
+                    </div>
+                <div class="day">
+                    <div>01/02</div>
+                    <input type="checkbox" name="sleep"/>
+                    <input type="checkbox" name="vitamins"/>
+                    <input type="checkbox" name="work out"/>
+                    <input type="checkbox" name="walk dog"/>
+                    <input type="checkbox" name="skin care"/>
+                    <input type="checkbox" name="study"/>
+                    <input type="checkbox" name="read"/>
+                    <input type="checkbox" name="eat healthy"/>
+                    </div>                           
+            </div>
+    
+        </form>
     </main>
     <footer>
-
+        <p>@Layla Barbosa, 2023</p>
     </footer>
 </body>
 </html>
